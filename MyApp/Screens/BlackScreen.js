@@ -1,23 +1,24 @@
 import React from "react";
 import { Text, View, Button, StyleSheet } from "react-native";
 
-const DetailsScreen = ({ navigation }) => {
+const BlackScreen = ({ navigation }) => {
     return (
         <View style={StyleSheet.container}>
-            <center>{StyleSheet.text}Parang Tanga</center>
+            <Text style={StyleSheet.text}>Parang Tanga</Text>
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} ></Button>
-            </View>
+            
+        </View>
     );
 };
 
 StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "black",
         alignItems: "center",
         justifyContent: "center",
     },
 });
 
 
-export default DetailsScreen;
+export default BlackScreen;
